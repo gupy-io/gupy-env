@@ -1,12 +1,12 @@
 {
   "name": "gupy-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Environment variable loader using yml files",
   "main": "src/main.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/gupy-io/gupy-env.git"
-  },  
+    "type": "git",
+    "url": "https://github.com/gupy-io/gupy-env.git"
+  },
   "scripts": {
     "test": "NODE_ENV=test mocha",
     "lint": "eslint --fix {src,test}/**/*.js",
