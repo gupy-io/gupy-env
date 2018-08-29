@@ -2,6 +2,12 @@
 
 Environment variable loader using yml files.
 
+## Installation
+
+```bash
+npm install gupy-io/gupy-env
+```
+
 ## Usage
 
 Declaring variables in a file (eg. .app.yml):
