@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-unused-expressions": 0,
+    "chai-friendly/no-unused-expressions": "error",
+    "gupy/no-test-describre-only": "error",
+    "gupy/no-test-it-only": "error"
+  },
+  "plugins": [
+    "gupy",
+    "chai-friendly"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "gupy-env",
+  "version": "1.0.0",
+  "description": "Environment variable loader using yml files",
+  "main": "src/main.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/gupy-io/gupy-env.git"
+  },  
+  "scripts": {
+    "test": "NODE_ENV=test mocha",
+    "lint": "eslint --fix {src,test}/**/*.js",
+    "prettier": "prettier --config .prettierrc --write '{src,test}/**/*.js'"
+  },
+  "author": "Thales Pereira <thales.pereira@gupy.com.br>",
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "^3.12.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-gupy": "git+https://git@github.com/gupy-io/eslint-plugin-gupy.git",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.2"
+  }
+}
