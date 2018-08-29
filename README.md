@@ -13,12 +13,15 @@ npm install gupy-io/gupy-env
 Declaring variables in a file (eg. .app.yml):
 
 ```yaml
+# Variables available in any environment
 DATABASE_HOST: '127.0.0.1'
 DATABASE_PORT: '5432'
 
+# Variables available in development environment
 development:
   DATABASE_USER: 'user-dev'
 
+# Variables available in test environment
 test:
   DATABASE_USER: 'user-test'
 ```
