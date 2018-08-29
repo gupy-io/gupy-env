@@ -40,7 +40,7 @@ const parse = (object, env) => {
  * @param {String} [options.encoding=utf8] - encoding of yml file
  * @param {String} [options.env=development] - enviroment section
  */
-const config = (options = {}) => {
+const load = (options = {}) => {
   const configPath = options.path ? options.path : defaultConfigPath;
   const encoding = options.encoding ? options.encoding : defaultEncoding;
   const env = process.env.NODE_ENV ? process.env.NODE_ENV : defaultEnv;
@@ -59,4 +59,4 @@ const config = (options = {}) => {
   }
 };
 
-module.exports = { parse, config };
+module.exports = { parse, load };

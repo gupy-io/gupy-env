@@ -1,10 +1,10 @@
 const { assert } = require('chai');
-const { config } = require('../src/main');
+const { load } = require('../src/main');
 
-describe('#config', () => {
+describe('#load', () => {
   it('should throw error for invalid file path', () => {
     assert.throws(
-      () => config({ path: '.invalid.yml' }),
+      () => load({ path: '.invalid.yml' }),
       "Error: ENOENT: no such file or directory, open '.invalid.yml'",
     );
   });

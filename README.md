@@ -28,7 +28,7 @@ Reading the file:
 ```javascript
 const gupyEnv = require('gupy-env');
 
-gupyEnv.config();
+gupyEnv.load();
 
 console.log(process.env.DATABASE_HOST)
 console.log(process.env.DATABASE_PORT)
@@ -50,7 +50,7 @@ Usage:
 ```javascript
 const gupyEnv = require('gupy-env');
 
-gupyEnv.config({
+gupyEnv.load({
   path: 'myapp.yml',
   encoding: 'iso-8859-1',
   env: 'staging'
