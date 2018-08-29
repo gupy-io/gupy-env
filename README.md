@@ -53,7 +53,7 @@ const gupyEnv = require('gupy-env');
 gupyEnv.load({
   path: 'myapp.yml',
   encoding: 'iso-8859-1',
-  env: 'staging'
-);
+  env: 'staging',
+});
 ```
 
