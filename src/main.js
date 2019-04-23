@@ -15,18 +15,14 @@ const parse = (object, env) => {
   const parsedObject = {};
 
   Object.keys(object).forEach((key) => {
-    if (typeof object[key] === 'string') {
-      if (!(key in parsedObject)) {
-        parsedObject[key] = object[key];
-      }
-    }
-
     if (typeof object[key] === 'object') {
       if (key === env) {
         Object.keys(object[key]).forEach((keyObject) => {
           parsedObject[keyObject] = object[key][keyObject];
         });
       }
+    } else {
+      parsedObject[key] = object[key];
     }
   });
 

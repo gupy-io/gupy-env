@@ -6,11 +6,13 @@ describe('#parse', () => {
     const object = {
       DATABASE_HOST: '127.0.0.1',
       DATABASE_USER: 'root',
+      DATABASE_TIMEOUT: 60,
       test: {
         DATABASE_USER: 'test-user',
       },
       development: {
         DATABASE_USER: 'dev-user',
+        TRACING_ENABLED: true,
       },
     };
     const env = 'development';
@@ -18,6 +20,8 @@ describe('#parse', () => {
     expect(parse(object, env)).to.deep.eq({
       DATABASE_HOST: '127.0.0.1',
       DATABASE_USER: 'dev-user',
+      DATABASE_TIMEOUT: 60,
+      TRACING_ENABLED: true,
     });
   });
 });
